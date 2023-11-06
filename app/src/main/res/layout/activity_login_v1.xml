@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_v1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:background="#00695C"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_icone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text"
+                android:layout_marginVertical="20dp"
+                android:drawableStart="@drawable/person"
+                android:drawableLeft="@drawable/person"
+                android:drawablePadding="10dp"
+                android:hint="Nom de l'utilisateur"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text"
+                android:layout_marginVertical="20dp"
+                android:drawableLeft="@drawable/pass"
+                android:drawableRight="@drawable/baseline_remove_red_eye_24"
+                android:drawablePadding="20dp"
+                android:hint="Mot de passe"
+                android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+                ></EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="se connecter"
+                android:backgroundTint="#F9A825"
+                android:layout_marginVertical="20dp"
+                android:textColor="@color/black"
+                ></Button>
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vous avez pas un compte?"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/linkTextView"
+                    android:textColor="#F9A825"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" S'inscrire"
+                    android:textColorLink="#0000FF"
+                    android:autoLink="web"
+                    android:clickable="true"
+                    android:layout_weight="2"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
